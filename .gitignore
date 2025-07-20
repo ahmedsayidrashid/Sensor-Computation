@@ -1,0 +1,4 @@
+# Files to ignore in the project
+
+# Ignore the virtual environment directory
+venv/
