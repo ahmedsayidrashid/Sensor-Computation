@@ -5,3 +5,6 @@ venv/
 
 # Ignore output binary files
 output/
+
+# Ignore local vscode configurations
+.vscode/
