@@ -3,6 +3,7 @@
 #include <iostream>
 
 using namespace std;
+
 int main() {
     cout << "Creating context..." << endl;
     void* context = zmq_ctx_new();
@@ -22,7 +23,6 @@ int main() {
         buffer[bytes] = '\0';
         std::cout << "[Received] " << buffer << std::endl;
     }
-
     zmq_close(socket);
     zmq_ctx_destroy(context);
     return 0;

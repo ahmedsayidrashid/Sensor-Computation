@@ -1,3 +1,6 @@
+// This file is ran on the Raspberry Pi to send sensor values
+// It uses ZeroMQ to send messages to a receiver
+// This file was used to send dummy sensor values from the Pi to a receiver
 #include <zmq.h>
 #include <string.h>
 #include <unistd.h>
@@ -17,6 +20,7 @@ int main() {
         return -1;
     }
     std::cout << "Sending messages..." << std::endl;
+    // Simulate sending sensor values
     for (int i = 0; i < 10; ++i) {
         std::cout << "Sending message " << i << std::endl;
         std::string msg = "Sensor value: " + std::to_string(i * 10);
