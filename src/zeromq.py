@@ -4,9 +4,9 @@
 # Required packages: zmq, RPi.GPIO
 # Follow the instructions in DEVELOPERS.md to set up the virtual environment and install the packages
 
-import zmq
 import RPi.GPIO as GPIO
 import time
+import zmq
 
 # Define the GPIO pin for the button
 USER_BUTTON_GPIO_PIN = 6
